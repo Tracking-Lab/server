@@ -1,4 +1,5 @@
 const express = require("express");
+const http = require("http");
 const app = express();
 const cors = require("cors");
 const bodyParser = require("body-parser");
@@ -14,7 +15,8 @@ const socket = require("./socket");
 require("./controllers/corn_job/index");
 
 const PORT = process.env.PORT || 8000;
-server = app.listen(PORT, async () => {
+const server = http.createServer(app);
+server.listen(PORT, async () => {
   console.log(`server is running on port is ${PORT} !! `);
 });
 
