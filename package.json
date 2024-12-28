@@ -1,0 +1,39 @@
+{
+  "name": "support_backend",
+  "version": "1.0.0",
+  "description": "Track suppord backend server that run and manage the backend of support system",
+  "main": "server.js",
+  "scripts": {
+    "test": "mocha",
+    "dev": "NODE_ENV=production node server",
+    "start": "nodemon server.js",
+    "sequelize": "sequelize-auto -h localhost -d track_support_v2 -u root -x -p 3306 -o models"
+  },
+  "author": "albrer112@gmail.com",
+  "license": "ISC",
+  "dependencies": {
+    "@ffmpeg-installer/ffmpeg": "^1.1.0",
+    "@google-cloud/local-auth": "^2.1.0",
+    "axios": "^1.6.8",
+    "bcryptjs": "^2.4.3",
+    "dropzone-vue": "^0.1.11",
+    "express": "^4.19.2",
+    "express-easy-fileuploader": "^1.0.2",
+    "express-session": "^1.18.0",
+    "firebase-admin": "^12.7.0",
+    "fluent-ffmpeg": "^2.1.3",
+    "googleapis": "^105.0.0",
+    "jsonwebtoken": "^9.0.2",
+    "mocha": "^10.3.0",
+    "multer": "^1.4.5-lts.1",
+    "mysql2": "^3.9.3",
+    "nodemailer": "^6.9.15",
+    "nodemon": "^3.1.0",
+    "request": "^2.88.2",
+    "sequelize": "^6.37.1",
+    "sequelize-auto": "^0.8.8",
+    "socket.io": "^4.7.5",
+    "tokens-creator": "^1.3.1",
+    "which-browser": "^0.7.1"
+  }
+}
